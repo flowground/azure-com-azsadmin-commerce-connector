@@ -1,0 +1,36 @@
+{
+    "type": "object",
+    "properties": {
+        "subscriptionId": {
+            "required": true,
+            "type": "string"
+        },
+        "reportedStartTime": {
+            "required": true,
+            "type": "string",
+            "format": "date-time"
+        },
+        "reportedEndTime": {
+            "required": true,
+            "type": "string",
+            "format": "date-time"
+        },
+        "aggregationGranularity": {
+            "required": false,
+            "type": "string"
+        },
+        "subscriberId": {
+            "required": false,
+            "type": "string"
+        },
+        "continuationToken": {
+            "required": false,
+            "type": "string"
+        },
+        "api_version": {
+            "required": true,
+            "type": "string",
+            "default": "2015-06-01-preview"
+        }
+    }
+}
